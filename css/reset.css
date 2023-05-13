@@ -1,0 +1,91 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    border:none;
+    object-fit:cover;
+    background: transparent;
+}
+body {
+    background: #F5F5F5;
+}
+button {
+    border:none;
+}
+a {
+    text-decoration:none;
+    cursor:point;
+    color: inherit;
+}
+h1 {
+    font-size:72px;
+}
+h2 {
+    font-size:54px;
+}
+h3,h5 {
+    font-size:36px;
+}
+h4 {
+    font-size:24px;
+}
+span {
+    font-size:20px
+}
+::placeholder, p {
+    font-size:18px;
+}
+
+h1, h2, h3 {
+    font-family:'Mak';
+    font-weight: 300;
+}
+::placeholder,h4,h5,ul,li,span,p {
+    font-family:'Roboto';
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+    color:#45576D;
+}
+ul, li, span, p  {
+    color: #323232;
+}
+img, iframe {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 300;
+    src:    url('../fonts/MAK.woff') format('woff'),
+            url('../fonts/MAK-bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-cyrillic_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:hover,:active {
+    transition:1s all;
+}
+
+
+
+
+
+/*
+* {
+    background:rgba(0,0,0,0.1);
+    border:1px solid black;
+}
+

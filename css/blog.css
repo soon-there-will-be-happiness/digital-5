@@ -1,0 +1,132 @@
+.content_blog {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    gap:1%;
+    min-height:80vh;
+}
+.blog_container {
+    flex: 1 1 65%;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+.blog_card {
+    flex: 0 0 32%;
+    display:flex;
+    flex-direction:column;
+    border-right: 1px solid #6F6F6F;
+    padding-right: 15px;
+    gap: 15px;
+}
+.blog_card_img {
+    flex: 1 1 40%;
+}
+.blog_card_content {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content:space-around;
+    flex: 1 1 60%;
+    min-height:200px;
+}
+.midl_line {
+    height:1px;
+    width:100%;
+    background: #6F6F6F;
+    margin: 20px 0 20px 0px;
+}
+
+.blog_container .blog_card:nth-child(1) {
+    flex-direction:row-reverse;
+}
+.blog_container .blog_card:nth-child(3) {
+    flex-direction:row;
+}
+.blog_card:nth-child(5) {
+    flex-direction:column-reverse;
+}
+
+.blog_data,.blog_name,.blog_post {
+    flex: 1 1 auto;
+    width:100%;
+}
+.blog_link {
+    flex: 0 0 auto;
+    width:100%;
+}
+.blog_data p {
+    padding-left:30px;
+}
+.blog_link p a:before {
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 2px;
+	transition: width 0.5s;
+    background-color: #45576D;
+}
+.blog_link a:hover:before {
+	width: 50%;
+}
+.blog_link a:active:before {
+    width: 100%;
+}
+
+
+@media (max-width:550px) {
+    .blog_card {
+    flex: 1 1 auto;
+    flex-direction:row;
+    }
+    .blog_card_img:nth-child(even) {
+    order:1;
+    }
+    .blog_card:nth-child(5) {
+    flex-direction:row;
+    }
+    .blog_card:nth-child(4) {
+    flex-direction:row-reverse;
+    }
+    .blog_card:nth-child(6) {
+    flex-direction:row-reverse;
+    }
+    .blog_card_content {
+    height:auto;
+    }
+    .content_blog {
+    gap:2em;
+    }
+}
+@media (max-width:375px) {
+    .blog_card {
+    flex-direction:column;
+    flex: 1 1 250px;
+    }
+    .blog_card_content {
+    flex: 1 1 250px;
+    }
+    .blog_card_img {
+    flex: 1 1 250px;
+    }
+    .blog_card:nth-child(4) {
+    flex-direction:column;
+    }
+    .blog_card:nth-child(5) {
+    flex-direction:column;
+    }
+    .blog_card:nth-child(6) {
+    flex-direction:column;
+    }
+    .blog_container .blog_card:nth-child(1) {
+        flex-direction:column;
+    }
+    .blog_container .blog_card:nth-child(3) {
+        flex-direction:column;
+    }
+}
+.p5_b1_pagination {
+    margin:50px auto;
+    max-width:300px;
+
+}

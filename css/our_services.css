@@ -1,0 +1,184 @@
+
+.padding_r_30 {
+    padding-right:30px;
+}
+.padding_r_20 {
+    padding-right:20px;
+}
+.padding_l_30 {
+    padding-left:30px;
+}
+.padding30 {
+    padding:30px;
+}
+.padding50 {
+    padding:50px 0px;
+}
+.gap50 {
+    gap:50px;
+}
+.gap30 {
+    gap:30px;
+}
+.gap20 {
+    gap:20px;
+}
+.gap10 {
+    gap:10px;
+}
+.flex_33_66 {
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+}
+.flex_33 {
+    flex: 1 1 220px;
+}
+.flex_66 {
+    flex: 1 1 50%;
+    min-width:320px;
+    justify-content:space-between;
+}
+/* list_ul--> */
+.list_ul {
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+    justify-content:space-between;
+}
+.list_image {
+    flex-grow:0;
+}
+.list_chapter {
+    flex-grow:0;
+}
+.list_end {
+    flex-grow:0;
+}
+
+
+/* p2_b1 КОНСУЛЬТАЦІЯ */
+.our_services ul {
+    padding: 0px 0px 0px 30px;
+    line-height:150%;
+}
+.review_post_wrap {
+    height:300px;
+}
+.review_post_wrap_hidden {
+    display:none;
+}
+.link_text {
+    display:flex;
+    align-items:center;
+    width:160px;
+}
+
+/* p2_b2 Презентація */
+.p2_b2 p {
+    color:#3B2C27;
+}
+
+.wrap_page_in_700 {
+    max-width:700px;
+    margin:0 auto;
+}
+/* p2_b4 */
+
+/* smm p2_b5 */
+.p2_b5_icons {
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+.p2_b5_icon_item {
+    display:flex;
+    position:relative;
+    align-items:center;
+    gap:5px;
+    justify-content:space-around;
+}
+.p2_b5_icon_link {
+    height:30px;
+    width:100%;
+    position:absolute;
+}
+.p2_b5_icon_img {
+    height:30px;
+    width:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.reviews_video {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    height:200px;
+    width:100%;
+    overflow-x:scroll;
+    justify-content:space-around;
+    gap:2px;
+}
+.reviews_video_hidden {
+    display:none;
+}
+.p2_b5 p {
+    color:#3B2C27;
+}
+.p2_b5_icons h4 {
+    color:#3B2C27;
+}
+
+
+/* p2_b6 */
+.p2_b6_list {
+    display:flex;
+    flex-direction:column;
+}
+.p2_b6 p {
+    color: #3B2C27;
+}
+
+/* p2_b8 */
+.p2_b8_height_iframe {
+    min-height:500px;
+}
+
+.p2_b6_list_ul {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    gap:20px;
+}
+.wrap500 {
+    max-width:500px;
+    margin:0 auto;
+    height:150px;
+    display:flex;
+    align-items:flex-end;
+}
+
+/* media */
+@media (max-width:600px) {
+    .our_services h2 {
+        font-size:40px;
+    }
+    .review_post_wrap {
+        display:none;
+    }
+    .review_post_wrap_hidden {
+        display:flex;
+    }
+    .p2_pagination_delete {
+        display:none;
+    }
+    .reviews_video {
+        display:none;
+    }
+    .reviews_video_hidden {
+        display:flex;
+    }
+}
+
