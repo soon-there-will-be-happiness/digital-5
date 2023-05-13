@@ -144,6 +144,11 @@ function showSlides1(n,step=0) {
         //alert("false"+n+" inx"+slideIndex1+' len '+slides1.length)
         slideIndex1 -= step
     }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+
+        alert("Вы используете мобильное устройство (телефон или планшет).")
+
+    } else alert("Вы используете ПК.")
 }
   // var i1, i2;
   // var slides1 = document.getElementsByClassName("wrap_card");
