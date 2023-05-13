@@ -111,14 +111,14 @@ function showS(n) {
 
 
 var slideIndex1= 0;
-showSlides1(slideIndex1,false);
+showSlides1(slideIndex1);
 var count = 3
 // Next/previous controls
 function plusSlides1(n) {
-  showSlides1(slideIndex1 += n, false);
+  showSlides1(slideIndex1 += n, n);
 }
 
-function showSlides1(n, card) {
+function showSlides1(n,step=0) {
     var slides1 = document.getElementsByClassName("wrap_card");
     if (slideIndex1+2  < slides1.length && slideIndex1>=0) {
         //alert(n+" inx"+slideIndex1+' len '+slides1.length)
@@ -140,7 +140,10 @@ function showSlides1(n, card) {
         slides1[slideIndex1+1].querySelector('.card').classList.add('card_active');
         slides1[slideIndex1+1].querySelector('.hidden_card').classList.add('hidden_card_active');
     }
-    else {slideIndex1 -= 1}
+    else {
+        //alert("false"+n+" inx"+slideIndex1+' len '+slides1.length)
+        slideIndex1 -= step
+    }
 }
   // var i1, i2;
   // var slides1 = document.getElementsByClassName("wrap_card");
