@@ -110,7 +110,7 @@ function showS(n) {
 
 
 
-var slideIndex1= 1;
+var slideIndex1= 0;
 showSlides1(slideIndex1,false);
 var count = 3
 // Next/previous controls
@@ -119,16 +119,29 @@ function plusSlides1(n) {
 }
 
 function showSlides1(n, card) {
-    var end = n + 2;
     var slides1 = document.getElementsByClassName("wrap_card");
-    var len = slides1.length;
-    for (i1 = 0; i1 < slides1.length; i1++) {
-          slides1[i1].style.display = "none";
+    if (slideIndex1+2  < slides1.length && slideIndex1>=0) {
+        //alert(n+" inx"+slideIndex1+' len '+slides1.length)
+        var end = n + 2;
+        var len = slides1.length;
+        for (i1 = 0; i1 < slides1.length; i1++) {
+            slides1[i1].style.display = "none";
+            slides1[i1].querySelector('.card').classList.remove('card_active');
+            slides1[i1].querySelector('.hidden_card').classList.remove('hidden_card_active');
+        }
+        for (var i2 = n; i2 <= end; i2++) {
+            var idx = i2 % len;
+            slides1[idx].style.display = "block";
+        }
+        // if (n>0){
+        //     slides1[slideIndex1].querySelector('.card').classList.toggle('card_active');
+        //     slides1[slideIndex1].querySelector('.hidden_card').classList.toggle('hidden_card_active');
+        // }
+        slides1[slideIndex1+1].querySelector('.card').classList.add('card_active');
+        slides1[slideIndex1+1].querySelector('.hidden_card').classList.add('hidden_card_active');
     }
-    for (var i2 = n; i2 <= end; i2++) {
-      var idx = i2 % len;
-      slides1[idx].style.display = "block";
-    }
+    else {slideIndex1 -= 1}
+}
   // var i1, i2;
   // var slides1 = document.getElementsByClassName("wrap_card");
   // if (n> slides1.length) {slideIndex1 = 0}
@@ -152,7 +165,7 @@ function showSlides1(n, card) {
   //     slides1[n+1].style.display = "block";
   // }
 
-}
+
 
         // if (card) {
       //     slides[slideIndex1 - 3].querySelector('.card').classList.toggle('card_active');
