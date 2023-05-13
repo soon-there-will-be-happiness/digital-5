@@ -120,7 +120,7 @@ function plusSlides1(n) {
 
 function showSlides1(n,step=0) {
     var slides1 = document.getElementsByClassName("wrap_card");
-    if (slideIndex1+2  < slides1.length && slideIndex1>=0) {
+    if (slideIndex1  < slides1.length && slideIndex1>=0) {
         //alert(n+" inx"+slideIndex1+' len '+slides1.length)
         var end = n + 2;
         var len = slides1.length;
@@ -137,8 +137,8 @@ function showSlides1(n,step=0) {
         //     slides1[slideIndex1].querySelector('.card').classList.toggle('card_active');
         //     slides1[slideIndex1].querySelector('.hidden_card').classList.toggle('hidden_card_active');
         // }
-        slides1[slideIndex1+1].querySelector('.card').classList.add('card_active');
-        slides1[slideIndex1+1].querySelector('.hidden_card').classList.add('hidden_card_active');
+        slides1[slideIndex1].querySelector('.card').classList.add('card_active');
+        slides1[slideIndex1].querySelector('.hidden_card').classList.add('hidden_card_active');
     }
     else {
         //alert("false"+n+" inx"+slideIndex1+' len '+slides1.length)
